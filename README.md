@@ -11,7 +11,7 @@ Technical Assignemt for HyperOps
 - Application pods must contain health probes
 - The database should run in HA mode
 
-# preriquisites: 
+# Preriquisites: 
 - minikube 1.26
 - terraform 1.2.6
 - minikube virtualization for multy node clusters
