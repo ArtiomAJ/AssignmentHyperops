@@ -19,7 +19,7 @@ Technical Assignemt for HyperOps
 ```
   minikube start --nodes 2 -p hyperops --driver=hyperv --disk-size 10000mb --memory 3000mb --extra-config=apiserver.enable-admission-plugins=PodNodeSelector
 ```
-- **enable ingress :**
+- **Enable minikube ingress controler:**
 ```
   minikube addons enable ingress -p hyperops
 ```
