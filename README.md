@@ -24,8 +24,8 @@ The database should run in HA mode\
 
 - Clone Repo 
 - Run : 
-            terraform init
-            terraform apply -auto-approve
+    terraform init
+    terraform apply -auto-approve
 
 # Remove everyting 
 - Run :       
