@@ -72,6 +72,13 @@ spec:
             port: 3306
           initialDelaySeconds: 99
           periodSeconds: 20
+        resources:
+          requests:
+            memory: "500Mi"
+            cpu: "250m"
+          limits:
+            memory: "1000Mi"
+            cpu: "500m"
         env:
         # Using Secrets
         - name: MARIADB_ROOT_PASSWORD

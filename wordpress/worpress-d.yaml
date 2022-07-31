@@ -45,11 +45,11 @@ spec: # specification for deployment resource
           value: "1"
         resources:
           requests:
-            memory: "1000Mi"
+            memory: "500Mi"
             cpu: "250m"
           limits:
-            memory: "1500Mi"
-            cpu: "750m"
+            memory: "1000Mi"
+            cpu: "500m"
 
 
 
