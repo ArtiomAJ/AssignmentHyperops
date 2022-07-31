@@ -12,7 +12,9 @@ resource "kubernetes_manifest" "worpress-d" {
   depends_on = [
     kubernetes_labels.hyperops,
     kubernetes_manifest.app-namespace,
-    kubernetes_manifest.secret-wp
+    kubernetes_manifest.secret-wp, 
+    kubernetes_manifest.wp-config,
+    kubernetes_manifest.worpress-s
   ]
   manifest = yamldecode(file("./wordpress/worpress-d.yaml"))
 }

@@ -21,7 +21,8 @@ resource "kubernetes_manifest" "mariadb-sts" {
   depends_on = [
     kubernetes_labels.hyperops-m02,
     kubernetes_manifest.secret,
-    kubernetes_manifest.mariadb-configmap
+    kubernetes_manifest.mariadb-configmap,
+    kubernetes_manifest.mariadb-s
   ]
   manifest = yamldecode(file("./mariadb/mariadb-sts.yaml"))
 }
